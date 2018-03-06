@@ -1,0 +1,43 @@
+<!doctype html>
+
+<head>
+    <title>Minimalist Todo list</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script type="text/javascript" src="todo.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Minimalist to-do list</h1>
+        <br><br>
+        <input id="newItem" placeholder="Type in to-do text..." />
+        <input id="addNew" type="button" class="btn btn-primary btn-sm" value="Add new" /> 
+        <br><br>
+        <div class="table-responsive">
+		<table class="table">
+		   <thead>
+		    <tr>
+			<th>to-do text</th>
+			<th>Completed</th>
+		        <th>Delete</th>
+		    </tr>
+		   </thead>
+		   <tbody id="items"></tbody>
+        	</table>
+        </div>
+        <br><br>
+        <div>
+		<a id="export" class="filter" href="javascript:void(0)">Export your to-do list <span class="glyphicon glyphicon-download"></span></a>
+                <br><br>
+		<text>Import your to-do list from a file: </text>
+                <br>
+		<input type="file" id="importFile" name="importFile" href="javascript:void(0)"></a>
+        </div>
+    </div>
+</body>
+
+</html>
